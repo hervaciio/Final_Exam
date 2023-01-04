@@ -1,13 +1,9 @@
 public class Main {
 	public static void main(String[] args) {
-		Customer customer;
-		RegularCustomer regularCustomer = new RegularCustomer("Rocelle", 2500);
-		SeniorCustomer seniorCustomer = new SeniorCustomer("Maui", 2500);
+		Quiz quiz;
 
-		customer = regularCustomer;
-		System.out.println(customer.getName()+" " +customer.calculateBill());
+		Student stdnt = new Student("Karen", 60);
 
-		customer = seniorCustomer;
-		System.out.println(customer.getName()+" "+customer.calculateBill());
+		System.out.println(stdnt.getStudentName()+" grade is "+stdnt.calculateGrade());
 	}
 }
